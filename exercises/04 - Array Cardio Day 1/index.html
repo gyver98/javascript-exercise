@@ -49,6 +49,16 @@
 
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live?
+    const totalLives = inventors.reduce((acc, currentInventor) => {
+      return acc + (currentInventor.passed - currentInventor.year)
+    }, 0);
+    console.log(totalLives);
+    
+    
+    
+    
+    
+    
     // const total_years_lived = inventors.reduce((currValue, inventor) => currValue += (inventor.passed - inventor.year), 0)
     // console.log(total_years_lived);
     // 5. Sort the inventors by years lived
